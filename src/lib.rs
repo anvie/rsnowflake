@@ -1,8 +1,6 @@
 
 extern crate time;
 
-//use time;
-
 #[derive(Copy, Clone)]
 pub struct SnowflakeIdGenerator {
     machine_id:u32,
@@ -27,8 +25,6 @@ impl SnowflakeIdGenerator {
         let timespec = time::get_time();
         let millis = ((timespec.sec * 1000) - EPOCH) + (timespec.nsec as i64 / 10_000_000i64);
 
-        println!("millis: {}", millis);
-
         (millis << 22) as i64 | ((self.machine_id << 12) as i64) | (self.idx as i64)
     }
 }
@@ -44,7 +40,7 @@ mod test {
         let mut idgen = SnowflakeIdGenerator::new(1);
         let mut ids = vec![];
 
-        for i in 0..10{
+        for _ in 0..10{
             ids.push(idgen.generate());
         }
 
