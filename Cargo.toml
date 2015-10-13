@@ -1,0 +1,13 @@
+[package]
+name = "rsnowflake"
+version = "0.0.1"
+authors = ["robin <r@ansvia.com>"]
+license = "Apache-2.0/MIT"
+readme = "README.md"
+keywords = ["snofwlake", "twitter"]
+description = """
+Distributed id generator based on Twitter Snofwlake
+"""
+
+[dependencies]
+time = "*"
