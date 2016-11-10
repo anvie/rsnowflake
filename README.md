@@ -17,6 +17,7 @@ Usage
 
 ```rust
 let mut idgen = SnowflakeIdGenerator::new(1);
+let uniqueId = idgen.generate();
 ```
  
  
