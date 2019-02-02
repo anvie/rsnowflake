@@ -4,6 +4,7 @@ version = "0.0.3"
 authors = ["robin <r@ansvia.com>"]
 license = "Apache-2.0/MIT"
 readme = "README.md"
+repository = "https://github.com/anvie/rsnowflake"
 keywords = ["snofwlake", "twitter"]
 description = """
 Distributed id generator based on Twitter Snofwlake
