@@ -8,7 +8,7 @@ Install
 ==========
 
 ```
-rsnowflake = {git = "https://github.com/anvie/rsnowflake.git"}
+rsnowflake = "0.1"
 ```
 
 
