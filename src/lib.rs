@@ -21,7 +21,7 @@ impl SnowflakeIdGenerator {
         let millis = SystemTime::now()
             .duration_since(UNIX_EPOCH)
             .expect("Time went mackward")
-            .as_millis();
+            .as_secs() * 1000;
 
         (millis << 22) as i64 | ((self.machine_id << 12) as i64) | (self.idx as i64)
     }
